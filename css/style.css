@@ -45,7 +45,6 @@ hr {
   background: linear-gradient(90deg, rgba(100,28,52,1) 0%, rgba(28,28,28,1) 100%);
 }
 
-
 /* MENU COVER */
 .menu-cover {
   width: 100vw;
@@ -331,9 +330,38 @@ hr {
   padding-left: 1.7rem;
   line-height: 2.5rem;
 }
+.card__button {
+  /* height: 3rem;
+  width: 8rem; */
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #641c34;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display:inline-block;
+}
+.card__button:hover {
+  background-color: #1c1c1c;
+}
+.card__pdf {
+  width: 100%;
+  height: 80vh;
+}
 
 
-/* EXPERIENCIAS */
+/* NUESTRA FILOSOFIA */
+.youtube__video {
+  width: 100%;
+  height: 56.25%;
+}
+.spotify {
+  border-radius: 0px;
+  background-color: #282828;
+}
+
 .gallery__box {
   margin: 1rem auto 0rem auto;
   min-width: 23rem;
