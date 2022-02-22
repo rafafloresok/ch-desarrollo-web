@@ -1,0 +1,33 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+.background {
+    background: rgb(100,28,52);
+    background: linear-gradient(90deg, rgba(100,28,52,1) 0%, rgba(28,28,28,1) 100%);
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.back-none {
+    background: none;
+}
+
+.back-black {
+    background-color: black;
+}
+
+.back-white {
+    background: white;
+}
+
+.nav-link:hover {
+    color: silver;
+}
