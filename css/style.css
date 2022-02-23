@@ -98,11 +98,16 @@ hr {
   position:absolute;
   left: 1rem;
   top: 1rem;
+  z-index: 4;
 }
 .logo-link__image {
   height: 3rem;
   width: 3rem;
   border: 1px solid silver;
+  transition: transform 0.5s ease;
+}
+.logo-link__image:hover {
+  transform: scale(1.2);
 }
 .navbar {
   width: 100%;
@@ -345,6 +350,7 @@ hr {
   font-size: 1.6rem;
   text-decoration: none;
   display:inline-block;
+  transition: background-color 1s ease, color 0.5s ease;
 }
 .card__button:hover {
   background-color: #1c1c1c;
