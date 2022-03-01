@@ -373,15 +373,26 @@ hr {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 .gallery__card {
   background-color: silver;
   color: #1c1c1c;
   border: 1px solid #1c1c1c;
-  min-width: 230px;
-  max-width: 300px;
+  max-width: 30rem;
   padding: 0.5rem;
   margin: 1rem;
+}
+.articulo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top:0;
+  padding: 1rem;
+  z-index: 4;
+  max-width: 1320px;
+  background: rgba(28,28,28,0.95);
 }
 
 
@@ -449,10 +460,6 @@ hr {
     max-width: 35rem;
   }
 
-  .gallery__box {
-    max-width: 35rem;
-  }
-
 }
 
 
@@ -496,17 +503,6 @@ hr {
   }
   .card-3 {
     grid-area: card-3;
-  }
-
-  .gallery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-items: flex-start;
-  }
-  .gallery__box {
-    margin: 0.5rem;
-    max-width: 30rem;
   }
 
   .form {
