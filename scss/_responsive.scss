@@ -1,0 +1,131 @@
+@media (min-width: 600px) {
+    .nav__link-cover {
+      font-size: 4rem;
+    }
+  
+    .brand__title {
+      font-size: 6rem;
+    }
+    .brand__subtitle {
+      font-size: 3.8rem;
+    }
+    .brand__description {
+      font-size: 2rem;
+    }
+  
+    .section__description {
+      margin: 1rem 10%;
+    }
+    .card {
+      max-width: 35rem;
+    }
+  
+  }
+  
+  
+  @media (min-width: 768px) {
+    .nav-toggle {
+      display: none;
+    }
+    .navbar {
+      visibility: visible;
+      display: flex;
+      height: auto;
+      position: relative;
+    }
+  
+    .brand__title {
+      font-size: 7rem;
+    }
+    .brand__subtitle {
+      font-size: 4.4rem;
+    }
+    .brand__description {
+      font-size: 2.3rem;
+    }
+  
+    .grid-card {
+      display: grid;
+      justify-content:space-around;
+      align-items: flex-start;
+      justify-items: center;
+      grid-template-areas: 
+        "card-1 card-2 card-3";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 1rem;
+    }
+    .card-1 {
+      grid-area: card-1;
+    }
+    .card-2 {
+      grid-area: card-2;
+    }
+    .card-3 {
+      grid-area: card-3;
+    }
+  
+    .form {
+      margin: 0rem auto;
+    }
+    .grid-contact {
+      display: grid;
+      align-content:space-around;
+      justify-content:space-around;
+      align-items: center;
+      justify-items: stretch;
+      grid-template-areas:
+        "titulo titulo"
+        "formulario correo"
+        "formulario telefono"
+        "formulario redes"
+        "formulario direccion"
+        "formulario mapa";
+      
+    }
+    .titulo {
+      grid-area: titulo;
+    }
+    .formulario {
+      grid-area: formulario;
+    }
+    .correo {
+      grid-area: correo;
+    }
+    .telefono {
+      grid-area: telefono;
+    }
+    .redes {
+      grid-area: redes;
+    }
+    .direccion {
+      grid-area: direccion;
+    }
+    .mapa {
+      grid-area: mapa;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-card, .grid-contact {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .brand__title {
+      font-size: 9rem;
+    }
+    .brand__subtitle {
+      font-size: 5.6rem;
+    }
+    .brand__description {
+      font-size: 3rem;
+    }
+  
+    .grid-contact {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }

@@ -1,0 +1,50 @@
+/* HACKS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  svg {
+    vertical-align: middle;
+  }
+  
+  
+  /* GENERICOS */
+  body {
+    max-width: 1320px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+  }
+  .link {
+    color: white;
+    transition: color 0.25s ease;
+  }
+  .link:hover {
+    color: silver;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .margen-der {
+    margin-right: 0.5rem;
+  }
+  .margen-abajo {
+    margin-bottom: 0.5rem;
+  }
+  hr {
+    color: silver;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+  .gradient {
+    background: rgb(100,28,52);
+    background: linear-gradient(90deg, rgba(100,28,52,1) 0%, rgba(28,28,28,1) 100%);
+  }

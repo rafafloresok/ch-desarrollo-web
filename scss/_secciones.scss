@@ -1,0 +1,68 @@
+.section {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #641c34;
+    color: white;
+  }
+  .section__title {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .section__subtitle {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+  }
+  .section__description {
+    margin: 1rem 0rem;
+    line-height: 2.5rem;
+  }
+  .card {
+    background-color: silver;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    min-width: 230px;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin: 1rem auto 0rem auto;
+  }
+  .card--clear {
+    background-color: unset;
+    color: white;
+    border: none;
+  }
+  .card__image {
+    width: 100%;
+  }
+  .card__title {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+  .card__description {
+    margin: 0rem;
+    line-height: 2.5rem;
+  }
+  .card__list {
+    text-align: left;
+    padding-left: 1.7rem;
+    line-height: 2.5rem;
+  }
+  .card__button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #641c34;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    display:inline-block;
+    transition: background-color 1s ease, color 0.5s ease;
+  }
+  .card__button:hover {
+    background-color: #1c1c1c;
+  }
+  .card__pdf {
+    width: 100%;
+    height: 80vh;
+  }
