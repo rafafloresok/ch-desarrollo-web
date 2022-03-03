@@ -55,12 +55,6 @@ hr {
   margin: 1rem 1rem 0rem 1rem;
 }
 
-.gradient {
-  background: #641c34;
-  background: -webkit-gradient(linear, left top, right top, from(#641c34), to(#1c1c1c));
-  background: linear-gradient(90deg, #641c34 0%, #1c1c1c 100%);
-}
-
 .menu-cover {
   width: 100vw;
   height: 100vh;
@@ -317,13 +311,13 @@ hr {
   max-width: 1320px;
 }
 
-.brand {
+.front div {
   width: 100%;
   text-align: center;
   padding: 0rem 1rem;
 }
 
-.brand__title {
+.front div h1 {
   font-weight: bold;
   font-size: 4rem;
   opacity: 0;
@@ -333,7 +327,7 @@ hr {
           animation-fill-mode: forwards;
 }
 
-.brand__subtitle {
+.front div h2 {
   font-style: italic;
   font-weight: 400;
   font-size: 2.5rem;
@@ -345,7 +339,7 @@ hr {
           animation-fill-mode: forwards;
 }
 
-.brand__description {
+.front div p {
   opacity: 0;
   -webkit-animation: from-bottom 1s 2.5s ease;
           animation: from-bottom 1s 2.5s ease;
@@ -429,21 +423,23 @@ hr {
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  background-color: #641c34;
+  background: #641c34;
+  background: -webkit-gradient(linear, left top, right top, from(#641c34), to(#1c1c1c));
+  background: linear-gradient(90deg, #641c34 0%, #1c1c1c 100%);
   color: white;
 }
 
-.section__title {
+.section .section__title {
   font-size: 2.7rem;
   margin-bottom: 1rem;
 }
 
-.section__subtitle {
+.section .section__subtitle {
   font-size: 2.3rem;
   margin-top: 1rem;
 }
 
-.section__description {
+.section .section__description {
   margin: 1rem 0rem;
   line-height: 2.5rem;
 }
@@ -458,36 +454,29 @@ hr {
   margin: 1rem auto 0rem auto;
 }
 
-.card--clear {
-  background-color: unset;
-  color: white;
-  border: none;
-}
-
-.card__image {
+.card img {
   width: 100%;
 }
 
-.card__title {
+.card h2, .card h3 {
   font-size: 2rem;
   margin: 1rem 0rem;
 }
 
-.card__description {
+.card p {
   margin: 0rem;
   line-height: 2.5rem;
 }
 
-.card__list {
+.card ul {
   text-align: left;
   padding-left: 1.7rem;
   line-height: 2.5rem;
 }
 
-.card__button {
+.card a {
   padding: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem 1rem 0.5rem 1rem;
   background-color: #641c34;
   color: white;
   border: 1px solid white;
@@ -496,15 +485,17 @@ hr {
   display: inline-block;
   -webkit-transition: background-color 1s ease, color 0.5s ease;
   transition: background-color 1s ease, color 0.5s ease;
+  cursor: pointer;
 }
 
-.card__button:hover {
+.card a:hover {
   background-color: #1c1c1c;
 }
 
-.card__pdf {
-  width: 100%;
-  height: 80vh;
+.card--clear {
+  background-color: unset;
+  color: white;
+  border: none;
 }
 
 .youtube__video {
@@ -532,15 +523,6 @@ hr {
           align-items: flex-start;
 }
 
-.gallery__card {
-  background-color: silver;
-  color: #1c1c1c;
-  border: 1px solid #1c1c1c;
-  max-width: 30rem;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
 .articulo {
   width: 100vw;
   height: 100vh;
@@ -548,10 +530,19 @@ hr {
      object-fit: cover;
   position: fixed;
   top: 0;
-  padding: 1rem;
+  padding: 3rem 1rem 1rem 1rem;
   z-index: 4;
   max-width: 1320px;
   background: rgba(28, 28, 28, 0.95);
+}
+
+.articulo svg {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* CONTACTO */
@@ -601,17 +592,18 @@ hr {
   border: 1px solid #1c1c1c;
 }
 
+/* BREAKPOINT 600PX */
 @media (min-width: 600px) {
   .nav__link-cover {
     font-size: 4rem;
   }
-  .brand__title {
+  .front div h1 {
     font-size: 6rem;
   }
-  .brand__subtitle {
+  .front div h2 {
     font-size: 3.8rem;
   }
-  .brand__description {
+  .front div p {
     font-size: 2rem;
   }
   .section__description {
@@ -622,6 +614,7 @@ hr {
   }
 }
 
+/* BREAKPOINT 768PX */
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
@@ -634,13 +627,13 @@ hr {
     height: auto;
     position: relative;
   }
-  .brand__title {
+  .front div h1 {
     font-size: 7rem;
   }
-  .brand__subtitle {
+  .front div h2 {
     font-size: 4.4rem;
   }
-  .brand__description {
+  .front div p {
     font-size: 2.3rem;
   }
   .grid-card {
@@ -729,6 +722,7 @@ hr {
   }
 }
 
+/* BREAKPOINT 1024PX */
 @media (min-width: 1024px) {
   .grid-card, .grid-contact {
     margin-left: 10%;
@@ -736,14 +730,15 @@ hr {
   }
 }
 
+/* BREAKPOINT 1200PX */
 @media (min-width: 1200px) {
-  .brand__title {
+  .front div h1 {
     font-size: 9rem;
   }
-  .brand__subtitle {
+  .front div h2 {
     font-size: 5.6rem;
   }
-  .brand__description {
+  .front div p {
     font-size: 3rem;
   }
   .grid-contact {

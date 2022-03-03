@@ -1,10 +1,10 @@
 .section {
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-    background-color: #641c34;
-    color: white;
-  }
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: rgb(100,28,52);
+  background: linear-gradient(90deg, rgba(100,28,52,1) 0%, rgba(28,28,28,1) 100%);
+  color: white;
   .section__title {
     font-size: 2.7rem;
     margin-bottom: 1rem;
@@ -17,40 +17,35 @@
     margin: 1rem 0rem;
     line-height: 2.5rem;
   }
-  .card {
-    background-color: silver;
-    color: #1c1c1c;
-    border: 1px solid #1c1c1c;
-    min-width: 230px;
-    max-width: 300px;
-    padding: 0.5rem;
-    margin: 1rem auto 0rem auto;
-  }
-  .card--clear {
-    background-color: unset;
-    color: white;
-    border: none;
-  }
-  .card__image {
+}
+
+.card {
+  background-color: silver;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  min-width: 230px;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin: 1rem auto 0rem auto;
+  img {
     width: 100%;
   }
-  .card__title {
+  h2, h3 {
     font-size: 2rem;
     margin: 1rem 0rem;
   }
-  .card__description {
+  p {
     margin: 0rem;
     line-height: 2.5rem;
   }
-  .card__list {
+  ul {
     text-align: left;
     padding-left: 1.7rem;
     line-height: 2.5rem;
   }
-  .card__button {
+  a {
     padding: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 1rem 1rem 0.5rem 1rem;
     background-color: #641c34;
     color: white;
     border: 1px solid white;
@@ -58,11 +53,15 @@
     text-decoration: none;
     display:inline-block;
     transition: background-color 1s ease, color 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: #1c1c1c;
+    }
   }
-  .card__button:hover {
-    background-color: #1c1c1c;
-  }
-  .card__pdf {
-    width: 100%;
-    height: 80vh;
-  }
+}
+
+.card--clear {
+  background-color: unset;
+  color: white;
+  border: none;
+}

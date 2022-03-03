@@ -1,32 +1,32 @@
-  .youtube__video {
-    width: 100%;
+.youtube__video {
+  width: 100%;
+}
+.spotify {
+  border-radius: 0px;
+  background-color: #282828;
+}
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.articulo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top:0;
+  padding: 3rem 1rem 1rem 1rem;
+  z-index: 4;
+  max-width: 1320px;
+  background: rgba(28,28,28,0.95);
+  svg {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
   }
-  .spotify {
-    border-radius: 0px;
-    background-color: #282828;
-  }
-  .gallery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .gallery__card {
-    background-color: silver;
-    color: #1c1c1c;
-    border: 1px solid #1c1c1c;
-    max-width: 30rem;
-    padding: 0.5rem;
-    margin: 1rem;
-  }
-  .articulo {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    top:0;
-    padding: 1rem;
-    z-index: 4;
-    max-width: 1320px;
-    background: rgba(28,28,28,0.95);
-  }
+}
