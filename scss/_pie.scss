@@ -1,23 +1,23 @@
- .footer {
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    color: white;
-    z-index: 1;
-  }
-  .footer__copyright {
+.footer {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  &__copyright {
     font-size: 1.3rem;
     font-style: italic;
     margin: 0rem 1rem;
   }
-  .footer--landing {
+  &--landing {
     position: fixed;
     bottom: 0;
     width: 100%;
     justify-content: right;
     max-width: 1320px;
   }
-  .footer--section {
-    background-color: #1c1c1c;
+  &--section {
+    background-color: $negro;
     justify-content: center;
   }
+}

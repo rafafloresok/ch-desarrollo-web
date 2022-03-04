@@ -5,15 +5,15 @@
   background: rgb(100,28,52);
   background: linear-gradient(90deg, rgba(100,28,52,1) 0%, rgba(28,28,28,1) 100%);
   color: white;
-  .section__title {
+  &__title {
     font-size: 2.7rem;
     margin-bottom: 1rem;
   }
-  .section__subtitle {
+  &__subtitle {
     font-size: 2.3rem;
     margin-top: 1rem;
   }
-  .section__description {
+  &__description {
     margin: 1rem 0rem;
     line-height: 2.5rem;
   }
@@ -21,8 +21,8 @@
 
 .card {
   background-color: silver;
-  color: #1c1c1c;
-  border: 1px solid #1c1c1c;
+  color: $negro;
+  border: 1px solid $negro;
   min-width: 230px;
   max-width: 300px;
   padding: 0.5rem;
@@ -46,7 +46,7 @@
   a {
     padding: 0.5rem;
     margin: 1rem 1rem 0.5rem 1rem;
-    background-color: #641c34;
+    background-color: $bordo;
     color: white;
     border: 1px solid white;
     font-size: 1.6rem;
@@ -55,13 +55,12 @@
     transition: background-color 1s ease, color 0.5s ease;
     cursor: pointer;
     &:hover {
-      background-color: #1c1c1c;
+      background-color: $negro;
     }
   }
-}
-
-.card--clear {
-  background-color: unset;
-  color: white;
-  border: none;
+  &--clear {
+    background-color: unset;
+    color: white;
+    border: none;
+  }
 }

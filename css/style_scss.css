@@ -55,6 +55,10 @@ hr {
   margin: 1rem 1rem 0rem 1rem;
 }
 
+.display-none {
+  display: none;
+}
+
 .menu-cover {
   width: 100vw;
   height: 100vh;
@@ -88,19 +92,12 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav__list-cover {
   list-style: none;
 }
 
 .nav__link-cover {
   text-decoration: none;
   font-size: 2.5rem;
-}
-
-.display-none {
-  display: none;
 }
 
 .header {
@@ -115,6 +112,19 @@ hr {
           align-items: center;
   justify-items: center;
   z-index: 3;
+}
+
+.header--landing {
+  position: fixed;
+  max-width: 1320px;
+}
+
+.header--section {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #1c1c1c;
+  -webkit-box-shadow: 0rem 0.5rem 1rem #1c1c1c;
+          box-shadow: 0rem 0.5rem 1rem #1c1c1c;
 }
 
 .logo-link {
@@ -173,19 +183,6 @@ hr {
 .navbar__link {
   padding: 0.5rem;
   text-decoration: none;
-}
-
-.header--landing {
-  position: fixed;
-  max-width: 1320px;
-}
-
-.header--section {
-  position: -webkit-sticky;
-  position: sticky;
-  background-color: #1c1c1c;
-  -webkit-box-shadow: 0rem 0.5rem 1rem #1c1c1c;
-          box-shadow: 0rem 0.5rem 1rem #1c1c1c;
 }
 
 .navbar__link--section {
@@ -429,17 +426,17 @@ hr {
   color: white;
 }
 
-.section .section__title {
+.section__title {
   font-size: 2.7rem;
   margin-bottom: 1rem;
 }
 
-.section .section__subtitle {
+.section__subtitle {
   font-size: 2.3rem;
   margin-top: 1rem;
 }
 
-.section .section__description {
+.section__description {
   margin: 1rem 0rem;
   line-height: 2.5rem;
 }
@@ -545,7 +542,6 @@ hr {
   cursor: pointer;
 }
 
-/* CONTACTO */
 .form {
   min-width: 23rem;
   max-width: 30rem;
