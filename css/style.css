@@ -409,9 +409,11 @@ hr {
   background-color: silver;
   border: 1px solid #1c1c1c;
   padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .form__input {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 100%;
   background-color: white;
   border: 1px solid #1c1c1c;
@@ -435,12 +437,18 @@ hr {
   background-color: #1c1c1c;
 }
 
+.correo, .telefono, .redes {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .contact-map {
   min-width: 23rem;
   max-width: 30rem;
   height: 25rem;
   width: 100%;
   border: 1px solid #1c1c1c;
+  margin-bottom: 3rem;
 }
 
 /* BREAKPOINT 600PX */
@@ -488,6 +496,13 @@ hr {
   }
   .front div p {
     font-size: 2.3rem;
+  }
+}
+/* BREAKPOINT 1024PX */
+@media (min-width: 1024px) {
+  .grid-card, .grid-contact {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .grid-card {
@@ -551,13 +566,6 @@ hr {
 
   .mapa {
     grid-area: mapa;
-  }
-}
-/* BREAKPOINT 1024PX */
-@media (min-width: 1024px) {
-  .grid-card, .grid-contact {
-    margin-left: 10%;
-    margin-right: 10%;
   }
 }
 /* BREAKPOINT 1200PX */
