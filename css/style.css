@@ -567,6 +567,34 @@ hr {
   .mapa {
     grid-area: mapa;
   }
+
+  .in-card-grid {
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "card-img card-title" "card-img card-description" "card-img card-link";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    max-width: 800px;
+  }
+
+  .card-img {
+    grid-area: card-img;
+  }
+
+  .card-title {
+    grid-area: card-title;
+  }
+
+  .card-description {
+    grid-area: card-description;
+  }
+
+  .card-link {
+    grid-area: card-link;
+  }
 }
 /* BREAKPOINT 1200PX */
 @media (min-width: 1200px) {
